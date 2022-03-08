@@ -2,17 +2,29 @@
   "name": "weather-cli",
   "version": "1.0.0",
   "main": "index.js",
-  "bin": "./index.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cli", "weather"],
+  "keywords": [
+    "cli",
+    "weather"
+  ],
   "author": "Artem Trifonov",
   "license": "ISC",
   "description": "",
   "homepage": "https://popa.ru",
   "repository": {
     "type": "git"
-  }
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
+  },
+  "peerDependenciesMeta": {}
 }
